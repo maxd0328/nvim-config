@@ -3,6 +3,7 @@ vim.opt.clipboard = 'unnamedplus'
 vim.opt.completeopt = {'menu', 'menuone', 'noselect'}
 vim.opt.whichwrap = 'b,s,h,l,<,>,~,[,]'
 vim.opt.mouse = 'a'
+vim.opt.signcolumn = 'yes'
 
 -- Tabs
 vim.opt.tabstop = 3
