@@ -69,5 +69,12 @@ require('lazy').setup({
    -- LSP Manager
    'williamboman/mason.nvim',
    'williamboman/mason-lspconfig.nvim',
-   'neovim/nvim-lspconfig'
+   'neovim/nvim-lspconfig',
+   -- Autopairs
+   {
+      'windwp/nvim-autopairs',
+      config = function()
+         require('config.autopairs')
+      end
+   }
 })
