@@ -4,6 +4,7 @@ vim.opt.completeopt = {'menu', 'menuone', 'noselect'}
 vim.opt.whichwrap = 'b,s,h,l,<,>,~,[,]'
 vim.opt.mouse = 'a'
 vim.opt.signcolumn = 'yes'
+vim.opt.termguicolors = true
 
 -- Tabs
 vim.opt.tabstop = 3
