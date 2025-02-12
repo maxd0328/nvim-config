@@ -13,7 +13,9 @@ return function(lspconfig, on_attach)
       filetypes = {
          "javascript",
          "typescript",
-         "vue",
+         "javascriptreact",
+         "typescriptreact",
+         "vue"
       }
    })
 end
