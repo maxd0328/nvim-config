@@ -51,6 +51,7 @@ require('lazy').setup({
    },
    {
       'hrsh7th/nvim-cmp',
+      version = '0.0.2',
       dependencies = {
          'lspkind.nvim',
          'hrsh7th/cmp-nvim-lsp', -- lsp auto-completion

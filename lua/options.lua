@@ -25,3 +25,6 @@ vim.opt.incsearch = true
 vim.opt.hlsearch = true
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
+
+-- Diagnostics
+vim.diagnostic.config({ virtual_text = true })
