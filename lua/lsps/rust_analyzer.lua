@@ -5,6 +5,11 @@ return function(lspconfig, on_attach)
          ['rust-analyzer'] = {
             rustfmt = {
                enableRangeFormatting = true
+            },
+            diagnostics = {
+               disabled = {
+                  'inactive-code'
+               }
             }
          }
       }
