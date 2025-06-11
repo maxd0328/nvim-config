@@ -4,12 +4,8 @@ return function(lspconfig, on_attach)
       settings = {
          ['rust-analyzer'] = {
             rustfmt = {
-               enableRangeFormatting = true
-            },
-            diagnostics = {
-               disabled = {
-                  'inactive-code'
-               }
+               enableRangeFormatting = true,
+               extraArgs = { "+nightly" }
             }
          }
       }
