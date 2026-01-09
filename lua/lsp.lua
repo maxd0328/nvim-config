@@ -42,7 +42,7 @@ end
 
 require('mason-lspconfig').setup({
    -- Add LSPs to install here
-   ensure_installed = { 'clangd', 'pylsp', 'lua_ls', 'rust_analyzer', 'jdtls', 'vtsls', 'hls' }
+   ensure_installed = { 'clangd', 'pylsp', 'lua_ls', 'rust_analyzer', 'jdtls', 'vtsls', 'hls', 'svelte-language-server' }
 })
 
 ------------------------
@@ -56,3 +56,9 @@ require('lsps.rust_analyzer')(lspconfig, on_attach)
 require('lsps.jdtls')(lspconfig, on_attach)
 require('lsps.vtsls')(lspconfig, on_attach)
 require('lsps.hls')(lspconfig, on_attach)
+
+-----------------------
+-- Enable Other LSPs --
+-----------------------
+
+vim.lsp.enable('svelte')

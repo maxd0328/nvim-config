@@ -22,7 +22,10 @@ require('lazy').setup({
    },
    {
       'nvim-treesitter/nvim-treesitter',
-      build = ':TSUpdate'
+      build = ':TSUpdate',
+      config = function()
+         require('config.treesitter')
+      end
    },
    {
       'nvim-telescope/telescope.nvim',
